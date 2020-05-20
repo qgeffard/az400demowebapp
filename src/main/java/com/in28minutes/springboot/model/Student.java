@@ -49,6 +49,8 @@ public class Student {
 		this.courses = courses;
 	}
 
+	public void toto(){}
+
 	@Override
 	public String toString() {
 		return String.format(
