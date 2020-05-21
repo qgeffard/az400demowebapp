@@ -82,7 +82,7 @@
 					<outputDirectory>target/</outputDirectory>
 					<resources>
 						<resource>
-							<directory>deployment.yml</directory>
+							<directory>kubernetes</directory>
 							<filtering>true</filtering>
 						</resource>
 					</resources>
