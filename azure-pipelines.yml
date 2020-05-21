@@ -17,7 +17,7 @@ steps:
   displayName: 'Copy Files to: $(build.artifactstagingdirectory)'
   inputs:
     SourceFolder: '$(system.defaultworkingdirectory)'
-    Contents: **/*.*
+    Contents: '**/*.*'
     TargetFolder: '$(build.artifactstagingdirectory)'
   condition: succeededOrFailed()
 
