@@ -29,7 +29,7 @@ steps:
   condition: succeededOrFailed()
 
 - task: Docker@2
-  displayName: buildAndPush
+  displayName: ConstructDockerImageAndDeploy
   inputs:
     containerRegistry: containerRegistryaz400
     repository: containerRegistryaz400

@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: containerregistryaz400
-        image: containerregistryaz400.azurecr.io/containerregistryaz400:37
+        image: containerregistryaz400.azurecr.io/containerregistryaz400:68
         ports:
-        - containerPort: 80
+        - containerPort: 8080
