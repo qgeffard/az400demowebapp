@@ -35,6 +35,8 @@ steps:
     repository: containerRegistryaz400
 
 - script: |
+   cd target/
    ls -ail
+   cd ..
    cat kubernetes/deployment.yml
   displayName: 'Command Line Script'
