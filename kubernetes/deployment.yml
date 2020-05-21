@@ -3,10 +3,10 @@ kind: Deployment
 metadata:
   name: mywebapp
 spec:
-  replicas: 3
   selector:
     matchLabels:
-      app: spring
+      app: mywebapp
+  replicas: 2 
   template:
     metadata:
       labels:
