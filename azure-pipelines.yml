@@ -1,5 +1,5 @@
 pool:
-  name: 
+  name:
   demands: maven
 
 steps:
