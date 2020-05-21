@@ -21,11 +21,10 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-
-- task: AzureRmWebAppDeployment@4
+- task: ArchiveFiles@2
   inputs:
-    ConnectionType: 'AzureRM'
-    azureSubscription: 'Azure Pass - Sponsorship(efa9a442-da9b-4d0a-b7a2-e7994e16e610)'
-    appType: 'webApp'
-    WebAppName: 'MyFirstWebApp'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.jar'
+    rootFolderOrFile: '$(Build.BinariesDirectory)'
+    includeRootFolder: true
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    replaceExistingArchive: true
